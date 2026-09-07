@@ -1,0 +1,18 @@
+[2026-09-07T17:03:45Z] === ENRICH ITERATION 1 START | repo=rust-lang/socket2 sha=239dd83a ===
+[2026-09-07T17:03:45Z] [iter=1] PHASE START: enrich repo=rust-lang/socket2 sha=239dd83a runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/239dd83a-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/239dd83a4ced08e514d2c38942aab99791119f0d.nq.gz
+[2026-09-07T17:03:45Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-07T17:03:48Z] [iter=1] AST store loaded triples=356067 load_secs=3 mem_mb=562 MB
+[2026-09-07T17:03:48Z] [iter=1] Step 2: Finding LSP targets mem_mb=562 MB
+[2026-09-07T17:03:48Z] [iter=1] LSP targets found call_sites=2191 imports=0 extends=0 implements=5 secs=1
+[2026-09-07T17:03:49Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=562 MB
+[2026-09-07T17:03:51Z] [iter=1] Position index built positions=25986 nodes_with_types=30263 secs=2 mem_mb=562 MB
+[2026-09-07T17:03:51Z] [iter=1] Step 3: Starting LSP resolution mem_mb=562 MB already_completed_types=[] already_completed_files=0
+[2026-09-07T17:03:51Z] [iter=1] Resolving target type target_type=call_site count=2191
+[2026-09-07T17:04:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.0 files_done=2 resolved=53 errors=250 current=tests/socket.rs
+[2026-09-07T17:05:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=4 resolved=592 errors=629 current=src/sockaddr.rs
+[2026-09-07T17:05:53Z] [iter=1] Target type resolved target_type=call_site resolved=738 errors=719 secs=122 mem_mb=562 MB
+[2026-09-07T17:05:53Z] [iter=1] Resolving target type target_type=implements_clause count=5
+[2026-09-07T17:06:00Z] [iter=1] Target type resolved target_type=implements_clause resolved=3 errors=0 secs=7 mem_mb=562 MB
+[2026-09-07T17:06:08Z] [iter=1] Step 5: Writing final enrichment file triples=13962
+[2026-09-07T17:06:08Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/239dd83a4ced08e514d2c38942aab99791119f0d.nq.gz size_kb=227
+[2026-09-07T17:06:08Z] [iter=1] PHASE END: enrich elapsed_s=143 elapsed_min=2.4 total_triples=13962
